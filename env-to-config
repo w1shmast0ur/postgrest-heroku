@@ -11,12 +11,12 @@ config_settings=(
   server-host
   server-port
   server-proxy-uri
-  jwt-secret
+  # jwt-secret # there is some issue with reading the file, fix
   jwt-aud
   secret-is-base64
   max-rows
   pre-request
-  role-claim-key
+  # role-claim-key # there is some issue with escaping, fix
 )
 
 for conf in "${config_settings[@]}"; do
